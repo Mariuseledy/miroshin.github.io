@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('/images/88221705_p0\ -\ Copy.png');
+    background-image: url('https://i.ibb.co/WvgfLYp/88221705-p0-Copy-3.png');
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -49,7 +49,7 @@ h1 {
 }
 
 .countdown {
-    min-width: 1980px;
+    min-width: 2000px;
     background: #941515;
     background-repeat: no-repeat;
     background-attachment: fixed;
