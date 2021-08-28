@@ -6,9 +6,10 @@
 
 body {
     background-image: url('https://i.ibb.co/TLTg9sY/88221705-p0-Copy-3.png');
+    
     height: 1000px;
     width: 100%;
-    background-size: cover;
+    background-size:auto;
     background-position: center center;
     display: flex;
     flex-direction: column;
@@ -78,7 +79,7 @@ h1 {
     font-size: 1.2rem;
     text-align: center;
     position: unset;
-    min-width: 15rem;
+    min-width: 20rem;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -101,7 +102,7 @@ h1 {
     font-size: 1.2rem;
     text-align: center;
     position: unset;
-    min-width: 15rem;
+    min-width: 20rem;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -119,8 +120,36 @@ h1 {
     color: rgb(24, 20, 20);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px){
+    body {
+        height: 768px;
+        width: 100%;
+    }
+    .text {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 0vh;
+        position: relative;
+        bottom: 10px;
+        border-bottom-left-radius: 20rem;
+        border-bottom-right-radius: 20rem;
+        min-width: 15.5rem;
+        min-height: 5px;
+        background-color: #941515;
+    }
     .miroshinserver, .credits {
-        min-width: 20rem;
+        min-width: 11rem;
+        max-height: 5rem;
+        text-align: center;
+    }
+    .big-text {
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+    .text {
+        font-size: 0.7rem;
+    }
+    .countdown-element span {
+        font-size: 0.8rem;
     }
 }
