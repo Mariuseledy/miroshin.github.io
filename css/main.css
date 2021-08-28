@@ -17,6 +17,7 @@ body {
     color: white;
     outline-color: black;
     outline-offset: 10em;
+    transition: ease all 1s;
 }
 
 h1 {
@@ -38,6 +39,7 @@ h1 {
     font-size: 3.7rem;
     line-height: 1;
     margin: 0 2rem;
+    transition: ease all 1s;
 }
 
 .countdown-element {
@@ -53,4 +55,70 @@ h1 {
     background: #941515;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0vh;
+    position: relative;
+    bottom: 10px;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    min-width: 30.5rem;
+    min-height: 5px;
+    background-color: #941515;
+}
+
+.credits {
+    border-radius: 50px;
+    background-color: #941515;
+    font-size: 1.2rem;
+    text-align: center;
+    position: unset;
+    min-width: 15rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1.2rem;
+    transition: ease all 1s;
+}
+
+.credits a {
+    color:white ;
+    text-decoration: none;
+}
+
+.credits a :hover {
+    color: rgb(24, 20, 20);
+}
+
+.miroshinserver {
+    border-radius: 50px;
+    background-color: #941515;
+    font-size: 1.2rem;
+    text-align: center;
+    position: unset;
+    min-width: 15rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1.2rem;
+    margin-bottom: 7rem;
+    transition: ease all 1s;
+}
+
+.miroshinserver a {
+    color:white ;
+    text-decoration: none;
+}
+
+.miroshinserver a :hover {
+    color: rgb(24, 20, 20);
+}
+
+@media only screen and (min-width: 768px) {
+    .miroshinserver, .credits {
+        min-width: 20rem;
+    }
 }
