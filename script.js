@@ -20,6 +20,11 @@ function countdown() {
     hoursEl.innerHTML = formatTime(hours);
     minutesEl.innerHTML = formatTime(minutes);
     secondsEl.innerHTML = formatTime(seconds);
+
+    if(totalSeconds < 1) {
+        clearInterval(x);
+        return nextDay.setDate(day.getDate() + 1);
+    }
 }
 
 function formatTime(time) {
@@ -28,4 +33,4 @@ function formatTime(time) {
 
 // Initial call
 countdown();
-setInterval(countdown, 1000)
+var x = setInterval(countdown, 1000)
